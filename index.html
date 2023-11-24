@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Epsile: Talk to strangers!</title>
+</head>
+<body>
+
+<section id="container">
+    <section id="chatWindow">
+        <section id="chatMain">
+            <div id="chatMainDiv"></div>
+        </section>
+        
+        <div id="isTypingDiv" class="consoleChat">Stranger is typing...</div>
+        
+        <section id="panelRow">
+            <input type="button" value="Disconnect" id="disconnectButton" disabled>
+            <div id="chatAreaWrap">
+                <textarea id="chatArea" disabled="disabled"></textarea>
+            </div>
+        </section>
+    
+        <section id="peopleOnlineSection">
+            <span id="peopleOnlineSpan">0</span> online
+        </section>
+    </section>
+
+    <section id="welcomeScreen">
+        <section id="startButtonDiv">
+            <div>
+               
+                <input type="button" value="Start chatting!" class="button" id="startButton" disabled>
+            </div>
+        </section>
+        
+        <header>
+            <a href="./"><div id="logo"></div></a>
+        </header>
+        
+    </section>
+</section>
+
+<audio id="alertSound">
+    <source src="media/alert.ogg" />
+    <source src="media/alert.mp3" />
+</audio>
+<script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+<script src="js/epsile.js"></script>
+</body>
+</html>
